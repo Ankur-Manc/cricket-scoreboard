@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter
-@Setter
 public class Batsman extends Player {
     private Integer score = 0;
     private Integer numberOf4s = 0;
@@ -31,5 +30,20 @@ public class Batsman extends Player {
         this.setNumberOfBallsFaced(this.getNumberOfBallsFaced() + 1);
     }
 
+    private void setScore(Integer score){
+        this.score = score;
+    }
+
+    private void setNumberOf4s(Integer numberOf4s){
+        this.numberOf4s = numberOf4s;
+    }
+
+    private void setNumberOf6s(Integer numberOf6s){
+        this.numberOf6s = numberOf6s;
+    }
+
+    private void setNumberOfBallsFaced(Integer numberOfBallsFaced){
+        this.numberOfBallsFaced = numberOfBallsFaced;
+    }
 
 }
